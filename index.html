@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Reproductor de música</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="icon" href="/pausebutton.svg">
+</head>
+<body class="bordes">
+  <div class="background"></div>
+  <header>
+    <h1>Reproductor de música</h1>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Lista de reproducción</a>
+      <a href="#">Acerca de</a>
+    </nav>
+  </header>
+  <main>
+    <section id="track-list" class="container">
+    </section>
+    <footer> 
+      <div class="player">
+        <audio class="player__audio" controls id="audio" autoplay></audio>
+        <div class="controls">
+          <div class="player__controls">
+            
+            <div class="player__btn player__btn--medium" id="backward">
+              <i class="fas fa-backward"></i>
+            </div>
+     
+            <div class="player__btn player__btn--medium play" id="play">
+              <i class="fas fa-play play-btn"></i>
+              <i class="fas fa-pause pause-btn hide"></i>
+            </div>
+     
+            <div class="player__btn player__btn--medium" id="forward">
+              <i class="fas fa-forward"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  
+<script type="module" src="/main.js"></script>
+</body>
+</html>
